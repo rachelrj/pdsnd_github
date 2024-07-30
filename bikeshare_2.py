@@ -1,10 +1,14 @@
+import os
 import time
 import pandas as pd
 import numpy as np
 
-CITY_DATA = { 'chicago': 'chicago.csv',
-              'new york city': 'new_york_city.csv',
-              'washington': 'washington.csv' }
+CITY_DATA = {}
+
+for file in os.listdir():
+    if file.endswith(".csv"):
+        city_name = file.replace('_', ' ').replace('.csv', '')
+        CITY_DATA[city_name] = file
 
 def get_filters():
     """
