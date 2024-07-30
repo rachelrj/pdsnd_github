@@ -10,6 +10,14 @@ for file in os.listdir():
         city_name = file.replace('_', ' ').replace('.csv', '')
         CITY_DATA[city_name] = file
 
+def get_user_choice(prompt, options):
+    """Helper function to get valid user input."""
+    while True:
+        choice = input(prompt).lower()
+        if choice in options:
+            return choice
+        print("Invalid input")
+
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -20,32 +28,9 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
-    while True:
-        city = input("Would you like to see data for Chicago, New York City, or Washington? ").lower()
-        if city in CITY_DATA:
-            break
-        else:
-            print("Invalid input. Please enter a valid city name.")
-    
-    # get user input for month (all, january, february, ... , june)
-    months = ['january', 'february', 'march', 'april', 'may', 'june', 'all']
-    while True:
-        month = input("Which month? January, February, March, April, May, June, or 'all' to not filter by month? ").lower()
-        if month in months:
-            break
-        else:
-            print("Invalid input. Please enter a valid month or 'all'.")
-    
-    # get user input for day of week (all, monday, tuesday, ... sunday)
-    days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all']
-    while True:
-        day = input("Which day? Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, or 'all' to not filter by day? ").lower()
-        if day in days:
-            break
-        else:
-            print("Invalid input. Please enter a valid day or 'all'.")
-    
-    print('-'*40)
+    city = get_user_choice("City: ", CITY_DATA.keys())
+    month = get_user_choice("Month: ", ['january', 'february', 'march', 'april', 'may', 'june', 'all'])
+    day = get_user_choice("Day: ", ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all'])
     return city, month, day
 
 def load_data(city, month, day):
