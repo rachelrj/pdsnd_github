@@ -15,6 +15,28 @@ The user inputs the city, month, and day for which they want the data from the c
 - Statistics on the total and average trip duration.
 - Statistics on bikeshare users.
 
+## Installation Instructions
+
+Install dependencies
+
+```
+pip install -r requirements.txt
+```
+
+Run the project
+
+```
+python3 bikeshare_2.py
+```
+
+or
+
+```
+python bikeshare_2.py
+```
+
+Depending on your version of python installed.
+
 ## Files used
 
 bikeshare_2.py
