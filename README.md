@@ -2,10 +2,6 @@
 
 The bikeshare data analyzer takes csv inputs, analyzes those, and outputs readable and understandable facts to the user.
 
-## Data Created
-
-The original project that this project was forked from was created years ago. This version was created July 30, 2024.
-
 ## Date Created
 
 The original project that this project was forked from was created years ago. This version was created July 30, 2024.
