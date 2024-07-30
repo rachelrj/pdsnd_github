@@ -39,7 +39,13 @@ Depending on your version of python installed.
 
 ## Files used
 
-bikeshare_2.py
+The project analyzes csv files that are located in the root of the project.
+
+Columns are Start Time,End Time,Trip Duration,Start Station,End Station,User Type,Gender,Birth Year
+
+One data piece per line
+
+CSV files should be named by city. If city contains space, replace with underscore.
 
 ## Credits
 
