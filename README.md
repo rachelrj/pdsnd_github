@@ -26,7 +26,8 @@ bikeshare_2.py
 ## Credits
 
 This is a forked project from Udacity's starter repository. See fork below project link. The libraries used include:
-*time
-*pandas
-*numpy
-*os
+
+- time
+- pandas
+- numpy
+- os
