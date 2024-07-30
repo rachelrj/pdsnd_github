@@ -1,17 +1,32 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
+# Bikeshare Data Analyzer
 
-### Date created
-Include the date you created this project and README file.
+The bikeshare data analyzer takes csv inputs, analyzes those, and outputs readable and understandable facts to the user.
 
-### Project Title
-Replace the Project Title
+## Data Created
 
-### Description
-Describe what your project is about and what it does
+The original project that this project was forked from was created years ago. This version was created July 30, 2024.
 
-### Files used
-Include the files used
+## Data Created
 
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+The original project that this project was forked from was created years ago. This version was created July 30, 2024.
 
+## Description
+
+The user inputs the city, month, and day for which they want the data from the csv file analyzed. The program outputs:
+
+- Statistics on the most frequent times of travel.
+- Statistics on the most popular stations and trip.
+- Statistics on the total and average trip duration.
+- Statistics on bikeshare users.
+
+## Files used
+
+bikeshare_2.py
+
+## Credits
+
+This is a forked project from Udacity's starter repository. See fork below project link. The libraries used include:
+*time
+*pandas
+*numpy
+*os
